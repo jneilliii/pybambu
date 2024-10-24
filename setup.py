@@ -5,14 +5,14 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="pybambu",
-    version="1.0.1",
+    version="1.0.2",
     author="Greg Hesp",
     author_email="greg.hesp+pybambulab@gmail.com",
-    description="A python library to connect to the Bambu Lab X1C over MQTT",
+    description="A python library to connect to Bambu Lab printers over MQTT",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/greghesp/pybambu",
-    REQUIRED=["paho-mqtt"],
+    REQUIRED=["paho-mqtt", "python-dateutil", "httpx>=0.27.0"],
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
